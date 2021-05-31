@@ -1,3 +1,3 @@
-# collage-planner
+# college-planner
 
 
