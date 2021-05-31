@@ -12,3 +12,8 @@ def count_courses():
         count += 1
     f.close()
     return count
+
+def retrieve_course():
+    f = open("class.dat", "r")
+    print(f.read())
+    f.close()

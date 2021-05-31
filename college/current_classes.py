@@ -6,3 +6,4 @@ def print_current_class_menu():
     classes1.course_num = input("course number: ")
     classes1.grade = input("grade: ")
     return classes1
+
