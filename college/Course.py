@@ -1,13 +1,17 @@
 class Course:
-    semester = "spring 2021"
-    subject = "Introduction to Computer Science"
+    name = "Introduction to Computer Science"
     credit_hours = 3
-    prerequests = "Math 113"
+    prerequests = []
     location = "online"
 
-    def __init__(self, semester):
-        self.semester = semester
+    def __init__(self, name):
+        self.name = name
+        self.prerequests = []
+        self.credit_hours = 0 
+        self.location = ""
+
     def __str__(self):
-        return "[" + self.semester + ", " + self.subject + ", " + self.credit_hours + ", " + self.prerequests + ", " + self.location + "]"
+        return "[" + self.name + ", " + self.credit_hours + ", " + str(self.prerequests) + ", " + self.location + "]"
+
     def __repr__(self):
        return str(self)
