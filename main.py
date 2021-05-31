@@ -1,7 +1,7 @@
-from collage.Course import Course
+from college.Course import Course
 from store import data
-from collage import enter_classes
-from collage import view_classes
+from college import enter_classes
+from college import view_classes
 course_list = []
 while(1==1):
     print("1.enter classes")
