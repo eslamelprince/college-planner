@@ -1,4 +1,5 @@
 from collage.Course import Course
+from store import data
 from collage import enter_classes
 from collage import view_classes
 course_list = []
@@ -11,10 +12,11 @@ while(1==1):
         print("Enter classes")
         course = enter_classes.print_enter_class_menu()
         course_list.append(course)
+        data.insert_course(course)
         print(course)
     elif x == str(2):
         print("View classes")
-        view_classes.view_class(course_list)
+        data.retrieve_course()
     elif x == str(3):
         print("goodbye")
         break

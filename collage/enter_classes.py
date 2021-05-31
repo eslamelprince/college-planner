@@ -5,6 +5,6 @@ def print_enter_class_menu():
     course = Course(semester)
     course.subject = input("subject :")
     course.credit_hours = input("credit hours :")
-    course.prerequisists = input("prerequisits :")
+    course.prerequests = input("prerequests :")
     course.location = input("location :")
     return course
