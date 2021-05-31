@@ -9,7 +9,8 @@ while(1==1):
     print("1.enter classes")
     print("2.view classes")
     print("3.current classes")
-    print("4.exit")
+    print("4.view current classes")
+    print("5.exit")
     x = input("select a number from the menu: ")
     if x == str(1) :
         print("Enter classes")
@@ -26,6 +27,9 @@ while(1==1):
         clazz.insert_course(classes)
         print(classes)
     elif x == str(4):
+        print("view current classes")
+        clazz.retrieve_course()
+    elif x == str(5):
         print("goodbye")
         break
 
