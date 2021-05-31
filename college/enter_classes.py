@@ -1,4 +1,4 @@
-from collage.Course import Course
+from college.Course import Course
 
 def print_enter_class_menu():
     semester = input("semester :")
