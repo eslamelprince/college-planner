@@ -10,7 +10,8 @@ while(1==1):
     print("2.view classes")
     print("3.current classes")
     print("4.view current classes")
-    print("5.exit")
+    print("5.find class")
+    print("6.exit")
     x = input("select a number from the menu: ")
     if x == str(1) :
         print("Enter classes")
@@ -30,6 +31,9 @@ while(1==1):
         print("view current classes")
         clazz.retrieve_course()
     elif x == str(5):
+        print("find class")
+        Class = data.search_course(input("type course number: "))
+    elif x == str(6):
         print("goodbye")
         break
 

@@ -21,3 +21,9 @@ def count_courses():
     f.close()
     return count
 
+def search_course(x):
+    f = open("data.dat", "r")
+    lines = f.readlines()
+    print(lines[int(x) - 1])
+    f.close()
+
