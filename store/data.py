@@ -21,9 +21,15 @@ def count_courses():
     f.close()
     return count
 
-def search_course(x):
+def search_course(course):
     f = open("data.dat", "r")
     lines = f.readlines()
-    print(lines[int(x) - 1])
+    if (course == "x"):
+        course == None
+    elif (int(course)) > len(lines):
+        print("given class not found")
+        course == None
+    else:
+        print(lines[int(course) - 1])
     f.close()
 
