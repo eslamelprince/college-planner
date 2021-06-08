@@ -9,8 +9,20 @@ def retrieve_course():
     print(f.read())
     f.close()
 
-def delete_courese():
-    print("delete_courese")
+def delete_courese(course):
+    f = open("data.dat", "r")
+    search_course(course)
+    lines = f.readlines()
+    if (int(course)) > len(lines):
+        course == None
+    else:
+        del lines[int(course)-1]
+        new_lines = open("data.dat", "w+")
+        for line in lines:
+            new_lines.write(line)
+        new_lines.close()
+        print("course deleted")
+    f.close
 
 def count_courses():
     f = open("data.dat", "r")
