@@ -1,46 +1,45 @@
-{1: [ECE 101, 3, [], online]}
-{2: [MATH 125, 3, [45], online]}
-{3: [MATH 113, 4, [45], online]}
-{4: [MATH 114, 4, ['3'], online]}
-{5: [MATH 203, 3, ['4'], online]}
-{6: [PHYS 160, 3, ['4'], online]}
-{7: [PHYS 161, 1, ['4'], online]}
-{8: [MATH 213, 3, ['4'], online]}
-{9: [PHYS 260, 3, ['8', '6'], online]}
-{10: [PHYS 261, 1, ['8', '6'], online]}
-{11: [MATH 214, 3, ['8'], online]}
-{12: [STAT 346, 3, ['8'], online]}
-{13: [ENGR 107, 2, [], online]}
-{14: [CS 112, 4, [], online]}
-{15: [CS 211, 3, ['14'], online]}
-{16: [CS 222, 3, ['15'], online]}
-{17: [CS 310, 3, ['15', '3'], online]}
-{18: [CS 471, 3, ['17'], online]}
-{19: [ECE 101, 3, [45], online]}
-{20: [ECE 201, 3, ['4', '19'], online]}
-{21: [ECE 231, 3, ['14', '19'], online]}
-{22: [ECE 232, 1, ['14', '19'], online]}
-{23: [MATH 214, 3, ['8'], online]}
-{24: [ECE 285 , 3, ['9', '10', '19', '23', '5'], online]}
-{25: [ECE 286, 3, ['24', '23', '5'], online]}
-{26: [ECE 321, 3, ['20', '13', '5', '23'], online]}
-{27: [ECE 333, 3, ['24'], online]}
-{28: [ECE 334, 1, ['10'], online]}
-{29: [ECE 350, 3, ['16', '24', '21', '22'], online]}
-{30: [ECE 445, 3, ['21', '22', '16'], online]}
-{31: [ECE 447, 4, ['29'], online]}
-{32: [ECE 448, 4, ['30'], online]}
-{33: [ECE 465, 3, ['12', '16'], online]}
-{34: [COMM 101, 3, [], online]}
-{35: [ENGH 101, 3, [], online]}
-{36: [ENGH 202, 3, ['35'], online]}
-{37: [ENGH 302, 3, ['35', '36'], online]}
-{38: [ECE 491, 1, ['34', '37'], online]}
-{39: [ECE 492, 1, ['34', '37', '20', '25', '29'], online]}
-{40: [ECE 493, 2, ['39'], online]}
-{41: [SOCI 120, 3, [], online]}
-{42: [AVT 253, 3, [], online]}
-{43: [ASTR 103, 3, [], online]}
-{44: [ECON 103, 3, [], online]}
-{45: [MATH 105, 4, [], online]}
-{46: [HIST 100, 3, [], online]}
+{'ECE-101': , ECE 101, 3, [], online}
+{'MATH-125': , MATH 125, 3, ['MATH-105'], online}
+{'MATH-113': , MATH 113, 4, ['MATH-105'], online}
+{'MATH-114': , MATH 114, 4, ['MATH-113'], online}
+{'MATH-203': , MATH 203, 3, ['MATH-114'], online}
+{'PHYS-160': , PHYS 160, 3, ['MATH-114'], online}
+{'PHYS-161': , PHYS 161, 1, ['MATH-114'], online}
+{'MATH-213': , MATH 213, 3, ['MATH-114'], online}
+{'PHYS-260': , PHYS 260, 3, ['MATH-213', 'PHYS-160'], online}
+{'PHYS-261': , PHYS 261, 1, ['MATH-213', 'PHYS-160'], online}
+{'MATH-214': , MATH 214, 3, ['MATH-213'], online}
+{'STAT-346': , STAT 346, 3, ['MATH-213'], online}
+{'ENGR-107': , ENGR 107, 2, [], online}
+{'CS-112': , CS 112, 4, [], online}
+{'CS-211': , CS 211, 3, ['CS-112'], online}
+{'CS-222': , CS 222, 3, ['CS-211'], online}
+{'CS-310': , CS 310, 3, ['CS-211', 'MATH-113'], online}
+{'CS-471': , CS 471, 3, ['CS-310'], online}
+{'ECE-101': , ECE 101, 3, [MATH-105], online}
+{'ECE-201': , ECE 201, 3, ['MATH-114', 'ECE-101'], online}
+{'ECE-231': , ECE 231, 3, ['CS-112', 'ECE-101'], online}
+{'ECE-232': , ECE 232, 1, ['CS-112', 'ECE-101'], online}
+{'ECE-285': , ECE 285 , 3, ['PHYS-260', 'PHYS-261', 'ECE-101', 'MATH-214', 'MATH-203'], online}
+{'ECE-286': , ECE 286, 3, ['ECE-285', 'MATH-214', 'MATH-203'], online}
+{'ECE-321': , ECE 321, 3, ['ECE-201', 'ECE-107', 'MATH-203', 'MATH-214'], online}
+{'ECE-333': , ECE 333, 3, ['ECE-285'], online}
+{'ECE-334': , ECE 334, 1, ['PHYS-261'], online}
+{'ECE-350': , ECE 350, 3, ['CS-222', 'ECE-285', 'ECE-231', 'ECE-232'], online}
+{'ECE-445': , ECE 445, 3, ['ECE-231', 'ECE-232', 'CS-222'], online}
+{'ECE-447': , ECE 447, 4, ['ECE-350'], online}
+{'ECE-448': , ECE 448, 4, ['ECE-445'], online}
+{'ECE-465': , ECE 465, 3, ['STAT 346', 'CS-222'], online}
+{'COMM-101': , COMM 101, 3, [], online}
+{'ENGH-101': , ENGH 101, 3, [], online}
+{'ENGH-202': , ENGH 202, 3, ['ENGH-101'], online}
+{'ENGH-302': , ENGH 302, 3, ['ENGH-101', 'ENGH-202'], online}
+{'ECE-491': , ECE 491, 1, ['COMM-101', 'ENGH-302'], online}
+{'ECE-492': , ECE 492, 1, ['COMM-101', 'ENGH-302', 'ECE-201', 'ECE-286', 'ECE-350'], online}
+{'ECE-493': , ECE 493, 2, ['ECE-492'], online}
+{'SOCI-120': , SOCI 120, 3, [], online}
+{'AVT-253': , AVT 253, 3, [], online}
+{'ASTR-103': , ASTR 103, 3, [], online}
+{'ECON-103': , ECON 103, 3, [], online}
+{'MATH-105': , MATH 105, 4, [], online}
+{'HIST-100': , HIST 100, 3, [], online}
