@@ -8,11 +8,12 @@ course_list = []
 while(1==1):
     print("1.enter classes")
     print("2.view classes")
-    print("3.current classes")
-    print("4.view current classes")
+    print("3.enter classes taken")
+    print("4.view classes taken")
     print("5.find class")
     print("6.delete class")
-    print("7.exit")
+    print("7.delete taken class")
+    print("8.exit")
     x = input("select a number from the menu: ")
     if x == str(1) :
         print("Enter classes")
@@ -24,12 +25,12 @@ while(1==1):
         print("View classes")
         data.retrieve_course()
     elif x == str(3):
-        print("current classes")
+        print("enter classes taken")
         classes = current_classes.print_current_class_menu()
         clazz.insert_course(classes)
         print(classes)
     elif x == str(4):
-        print("view current classes")
+        print("view classes taken")
         clazz.retrieve_course()
     elif x == str(5):
         print("find class")
@@ -38,6 +39,9 @@ while(1==1):
         print("delete class")
         data.delete_courese(input("type course number: "))
     elif x == str(7):
+        print("delete taken class")
+        clazz.delete_courese(input("type course number: "))
+    elif x == str(8):
         print("goodbye")
         break
 
