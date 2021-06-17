@@ -17,7 +17,7 @@ def delete_courese(course):
     y = 0
     for i in lines:
         y += 1
-        if course in i:
+        if course in i or course in i.lower():
             x += 1
             break
         else:
@@ -44,8 +44,9 @@ def search_course(course):
     f = open("data.dat", "r")
     lines = f.readlines()
     x = 0
+
     for i in lines:
-        if course in i:
+        if course in i or course in i.lower():
             print(i)
             x += 1
             break
