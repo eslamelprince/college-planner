@@ -88,7 +88,7 @@ def build_semester(course_number):
     classes.class_num = course_number
     f = open("clazz.dat", "r")
     lines = f.readlines()
-
+    
     s = data.search_course(course_number)
     start = s.find("[") + 1 
     end = s.find("]", start)
@@ -105,6 +105,9 @@ def build_semester(course_number):
         for i in lines:
             if a in i:
                 x += 1
+
+    if prereq_list == ['']:
+        x = 1
     if x == (len(prereq_list)):
         print("1.yes")
         print("2.no")
@@ -112,7 +115,7 @@ def build_semester(course_number):
         if add_class == "1": 
             semester = input("semester: ")
             classes1 = classes(semester)
-            classes1.class_num = course_number
+            classes1.class_num = "'" + course_number + "'"
             classes1.credit_hours = credit_hours
             classes1.grade = "N/A"
             insert_class(classes1)
@@ -122,3 +125,4 @@ def build_semester(course_number):
             print("class not added")
     if x != (len(prereq_list)):
         print("prerequisite not met")
+
