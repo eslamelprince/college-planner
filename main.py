@@ -13,7 +13,8 @@ while(1==1):
     print("5.find class")
     print("6.delete class")
     print("7.delete taken class")
-    print("8.exit")
+    print("8.build a semester")
+    print("9.exit")
     x = input("select a number from the menu: ")
     if x == str(1) :
         print("Enter classes")
@@ -27,11 +28,11 @@ while(1==1):
     elif x == str(3):
         print("enter classes taken")
         classes = current_classes.print_current_class_menu()
-        clazz.insert_course(classes)
+        clazz.insert_class(classes)
         print(classes)
     elif x == str(4):
         print("view classes taken")
-        clazz.retrieve_course()
+        clazz.semester_search(input("type semester: "))
     elif x == str(5):
         print("find class")
         Class = data.search_course(input("type course number: "))
@@ -42,6 +43,9 @@ while(1==1):
         print("delete taken class")
         clazz.delete_courese(input("type course number: "))
     elif x == str(8):
+        print("build a semester")
+        clazz.build_semester(input("type course number: "))
+    elif x == str(9):
         print("goodbye")
         break
 

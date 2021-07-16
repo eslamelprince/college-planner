@@ -44,10 +44,11 @@ def search_course(course):
     f = open("data.dat", "r")
     lines = f.readlines()
     x = 0
-
+    course_found = ""
     for i in lines:
         if course in i or course in i.lower():
             print(i)
+            course_found = i
             x += 1
             break
         elif course == "x":
@@ -57,4 +58,5 @@ def search_course(course):
     if x == 0:
         print("given class not found")
     f.close()
+    return course_found
 
