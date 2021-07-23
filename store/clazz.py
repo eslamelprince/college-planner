@@ -126,3 +126,47 @@ def build_semester(course_number):
     if x != (len(prereq_list)):
         print("prerequisite not met")
 
+def gpa():
+    f = open("clazz.dat", "r")
+    lines = f.readlines()
+    grade_list = []
+
+    for i in lines:
+        x = list(i.split(","))
+        y = x[3]
+        start = y.find(" ") + 1 
+        end = y.find("]", start)
+        grade = y[start:end]
+
+        if grade == "N/A":
+            grade_list.append(None)
+        else:
+            grade_list.append(grade)
+
+    total= 0
+    for element in grade_list:
+        if element == "A+":
+            total = total + 4.0
+        elif element == "A":
+            total = total + 4.0
+        elif element == "A-":
+            total = total + 3.7
+        elif element == "B+":
+            total = total + 3.3
+        elif element == "B":
+            total = total + 3.0
+        elif element == "B-":
+            total = total + 2.7
+        elif element == "C+":
+            total = total + 2.3
+        elif element == "C":
+            total = total + 2.0
+        elif element == "C-":
+            total = total + 1.7
+        elif element == "D":
+            total = total + 1.0
+    total_gpa = total / 6
+    
+    print("total GPA: ")
+    print(total_gpa)
+    f.close

@@ -33,6 +33,7 @@ while(1==1):
     elif x == str(4):
         print("view classes taken")
         clazz.semester_search(input("type semester: "))
+        clazz.gpa()
     elif x == str(5):
         print("find class")
         Class = data.search_course(input("type course number: "))

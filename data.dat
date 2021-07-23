@@ -21,14 +21,14 @@
 {'ECE-232': Digital Electronics & Logic Design Lab, ECE 232, 1, ['CS-112', 'ECE-101'], online}
 {'ECE-285': Electric Circuit Analysis I, ECE 285 , 3, ['PHYS-260', 'PHYS-261', 'ECE-101', 'MATH-214', 'MATH-203'], online}
 {'ECE-286': Electric Circuit Analysis II, ECE 286, 3, ['ECE-285', 'MATH-214', 'MATH-203'], online}
-{'ECE-321': Continuous-Time Signals & Systems, ECE 321, 3, ['ECE-201', 'ECE-107', 'MATH-203', 'MATH-214'], online}
+{'ECE-321': Continuous-Time Signals & Systems, ECE 321, 3, ['ECE-201', 'ENGR-107', 'MATH-203', 'MATH-214'], online}
 {'ECE-333': Linear Electronics I, ECE 333, 3, ['ECE-285'], online}
 {'ECE-334': Linear Electronics I Lab, ECE 334, 1, ['PHYS-261'], online}
 {'ECE-350': Embedded Systems & Hardware Interfaces, ECE 350, 3, ['CS-222', 'ECE-285', 'ECE-231', 'ECE-232'], online}
 {'ECE-445': Computer Organization, ECE 445, 3, ['ECE-231', 'ECE-232', 'CS-222'], online}
 {'ECE-447': Single-Chip Microcomputers, ECE 447, 4, ['ECE-350'], online}
 {'ECE-448': FPGA & ASIC Design with VHDL, ECE 448, 4, ['ECE-445'], online}
-{'ECE-465': Computer Networking Protocols, ECE 465, 3, ['STAT 346', 'CS-222'], online}
+{'ECE-465': Computer Networking Protocols, ECE 465, 3, ['STAT-346', 'CS-222'], online}
 {'COMM-101': Fundamentals of Communication, COMM 101, 3, [], online}
 {'ENGH-101': Composition, ENGH 101, 3, [], online}
 {'ENGH-202': Texts and Contexts, ENGH 202, 3, ['ENGH-101'], online}
