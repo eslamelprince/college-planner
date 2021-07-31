@@ -33,6 +33,7 @@ while(1==1):
     elif x == str(4):
         print("view classes taken")
         clazz.semester_search(input("type semester: "))
+        clazz.gpa()
     elif x == str(5):
         print("find class")
         Class = data.search_course(input("type course number: "))
@@ -43,8 +44,14 @@ while(1==1):
         print("delete taken class")
         clazz.delete_courese(input("type course number: "))
     elif x == str(8):
-        print("build a semester")
-        clazz.build_semester(input("type course number: "))
+        while(1==1):
+            print("build a semester")
+            clazz.build_semester(input("type course number: "))
+            print("1.yes")
+            print("2.no")
+            another_class_choice = input("do you want to add another class: ")
+            if another_class_choice == "2":
+                break
     elif x == str(9):
         print("goodbye")
         break

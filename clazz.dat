@@ -1,9 +1,44 @@
-{'Fall-2020': 'ENGR-107', Fall-2020, 2 , B]}
-{'Fall-2020': 'ASTR-103', Fall-2020, 3 , A]}
-{'Fall-2020': 'AVT-253', Fall-2020, 3 , B]}
-{'Fall-2020': 'ECON-103', Fall-2020, 3 , C]}
-{'Fall-2020': 'MATH-105', Fall-2020, 4 , A]}
-{'Spring-2021': 'HIST-100', Spring-2021, 3 , A]}
-{'Spring-2021': 'MATH-113', Spring-2021, 4 , C]}
-{'spring 2021': 'bruh-101', spring 2021, 3 , A}
-{'fall-2021': math-114, fall-2021,  4, N/A}
+{'Fall-2020': 'ENGR-107', Fall-2020, 2, B]}
+{'Fall-2020': 'ASTR-103', Fall-2020, 3, A]}
+{'Fall-2020': 'AVT-253', Fall-2020, 3, B]}
+{'Fall-2020': 'ECON-103', Fall-2020, 3, C]}
+{'Fall-2020': 'MATH-105', Fall-2020, 4, A]}
+{'Spring-2021': 'HIST-100', Spring-2021, 3, A]}
+{'Spring-2021': 'MATH-113', Spring-2021, 4, C]}
+{'fall-2021': 'MATH-114', fall-2021,  4, N/A}
+{'fall-2021': 'COMM-101', fall-2021,  3, N/A}
+{'fall-2021': 'SOCI-120', fall-2021,  3, N/A}
+{'fall-2021': 'CS-112', fall-2021,  4, N/A}
+{'fall-2021': 'ECE-101', fall-2021,  3, N/A}
+{'Spring-2022': 'MATH-213', Spring-2022,  3, N/A}
+{'Spring-2022': 'PHYS-160', Spring-2022,  3, N/A}
+{'Spring-2022': 'PHYS-161', Spring-2022,  1, N/A}
+{'Spring-2022': 'CS-211', Spring-2022,  3, N/A}
+{'Spring-2022': 'ECE-201', Spring-2022,  3, N/A}
+{'Spring-2022': 'ENGH-101', Spring-2022,  3, N/A}
+{'Fall-2022': 'MATH-203', Fall-2022,  3, N/A}
+{'Fall-2022': 'PHYS-260', Fall-2022,  3, N/A}
+{'Fall-2022': 'PHYS-261', Fall-2022,  1, N/A}
+{'Fall-2022': 'CS-310', Fall-2022,  3, N/A}
+{'Fall-2022': 'ECE-231', Fall-2022,  3, N/A}
+{'Fall-2022': 'ECE-232', Fall-2022,  1, N/A}
+{'Fall-2022': 'ENGH-202', Fall-2022,  3, N/A}
+{'Spring-2023': 'MATH-214', Spring-2023,  3, N/A}
+{'Spring-2023': 'CS-222', Spring-2023,  3, N/A}
+{'Spring-2023': 'ECE-285', Spring-2023,  3, N/A}
+{'Spring-2023': 'ENGH-302', Spring-2023,  3, N/A}
+{'Spring-2023': 'STAT-346', Spring-2023,  3, N/A}
+{'Fall-2023': 'MATH-125', Fall-2023,  3, N/A}
+{'Fall-2023': 'CS-471', Fall-2023,  3, N/A}
+{'Fall-2023': 'ECE-350', Fall-2023,  3, N/A}
+{'Fall-2023': 'ECE-491', Fall-2023,  1, N/A}
+{'Fall-2023': 'ECE-492', Fall-2023,  1, N/A}
+{'Fall-2023': 'ECE-286', Fall-2023,  3, N/A}
+{'Spring-2024': 'ECE-447', Spring-2024,  4, N/A}
+{'Spring-2024': 'ECE-333', Spring-2024,  3, N/A}
+{'Spring-2024': 'ECE-334', Spring-2024,  1, N/A}
+{'Spring-2024': 'ECE-321', Spring-2024,  3, N/A}
+{'Spring-2024': 'ECE-493', Spring-2024,  2, N/A}
+{'Spring-2024': 'ECE-445', Spring-2024,  3, N/A}
+{'Fall-2024': 'ECE-448', Fall-2024,  4, N/A}
+{'Fall-2024': 'ECE-465', Fall-2024,  3, N/A}

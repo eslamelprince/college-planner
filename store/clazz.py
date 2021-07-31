@@ -88,7 +88,7 @@ def build_semester(course_number):
     classes.class_num = course_number
     f = open("clazz.dat", "r")
     lines = f.readlines()
-
+    
     s = data.search_course(course_number)
     start = s.find("[") + 1 
     end = s.find("]", start)
@@ -105,6 +105,9 @@ def build_semester(course_number):
         for i in lines:
             if a in i:
                 x += 1
+
+    if prereq_list == ['']:
+        x = 1
     if x == (len(prereq_list)):
         print("1.yes")
         print("2.no")
@@ -112,7 +115,7 @@ def build_semester(course_number):
         if add_class == "1": 
             semester = input("semester: ")
             classes1 = classes(semester)
-            classes1.class_num = course_number
+            classes1.class_num = "'" + course_number + "'"
             classes1.credit_hours = credit_hours
             classes1.grade = "N/A"
             insert_class(classes1)
@@ -122,3 +125,63 @@ def build_semester(course_number):
             print("class not added")
     if x != (len(prereq_list)):
         print("prerequisite not met")
+
+def gpa():
+    f = open("clazz.dat", "r")
+    lines = f.readlines()
+    total = []
+    credit_hour_subtotal = []
+    for i in lines:
+        x = list(i.split(","))
+        y = x[3]
+        start = y.find(" ") + 1 
+        end = y.find("]", start)
+        grade = y[start:end]
+        z = x[2]
+        grade_point = 0
+
+        if z == " 1":
+            credit_hour = 1
+        elif z == " 2":
+            credit_hour = 2
+        elif z == " 3":
+            credit_hour = 3
+        elif z == " 4":
+            credit_hour = 4
+        credit_hour_total = 0
+        total_point = 0
+        if grade == "A+":
+            grade_point = grade_point + 4.0
+        elif grade == "A":
+            grade_point = grade_point + 4.0
+        elif grade == "A-":
+            grade_point = grade_point + 3.7
+        elif grade == "B+":
+            grade_point = grade_point + 3.3
+        elif grade == "B":
+            grade_point = grade_point + 3.0
+        elif grade == "B-":
+            grade_point = grade_point + 2.7
+        elif grade == "C+":
+            grade_point = grade_point + 2.3
+        elif grade == "C":
+            grade_point = grade_point + 2.0
+        elif grade == "C-":
+            grade_point = grade_point + 1.7
+        elif grade == "D":
+            grade_point = grade_point + 1.0
+        subtotal = credit_hour * int(grade_point)
+        if subtotal == 0:
+            None
+        else:
+            total.append(subtotal)
+            credit_hour_subtotal.append(credit_hour)
+         
+    for i in total:
+        total_point += i
+    for i in credit_hour_subtotal:
+        credit_hour_total += i
+    total_gpa = total_point / credit_hour_total
+    print("total GPA: ")
+    print(total_gpa)
+    f.close
