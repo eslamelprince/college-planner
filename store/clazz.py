@@ -129,44 +129,59 @@ def build_semester(course_number):
 def gpa():
     f = open("clazz.dat", "r")
     lines = f.readlines()
-    grade_list = []
-
+    total = []
+    credit_hour_subtotal = []
     for i in lines:
         x = list(i.split(","))
         y = x[3]
         start = y.find(" ") + 1 
         end = y.find("]", start)
         grade = y[start:end]
+        z = x[2]
+        grade_point = 0
 
-        if grade == "N/A":
-            grade_list.append(None)
+        if z == " 1":
+            credit_hour = 1
+        elif z == " 2":
+            credit_hour = 2
+        elif z == " 3":
+            credit_hour = 3
+        elif z == " 4":
+            credit_hour = 4
+        credit_hour_total = 0
+        total_point = 0
+        if grade == "A+":
+            grade_point = grade_point + 4.0
+        elif grade == "A":
+            grade_point = grade_point + 4.0
+        elif grade == "A-":
+            grade_point = grade_point + 3.7
+        elif grade == "B+":
+            grade_point = grade_point + 3.3
+        elif grade == "B":
+            grade_point = grade_point + 3.0
+        elif grade == "B-":
+            grade_point = grade_point + 2.7
+        elif grade == "C+":
+            grade_point = grade_point + 2.3
+        elif grade == "C":
+            grade_point = grade_point + 2.0
+        elif grade == "C-":
+            grade_point = grade_point + 1.7
+        elif grade == "D":
+            grade_point = grade_point + 1.0
+        subtotal = credit_hour * int(grade_point)
+        if subtotal == 0:
+            None
         else:
-            grade_list.append(grade)
-
-    total= 0
-    for element in grade_list:
-        if element == "A+":
-            total = total + 4.0
-        elif element == "A":
-            total = total + 4.0
-        elif element == "A-":
-            total = total + 3.7
-        elif element == "B+":
-            total = total + 3.3
-        elif element == "B":
-            total = total + 3.0
-        elif element == "B-":
-            total = total + 2.7
-        elif element == "C+":
-            total = total + 2.3
-        elif element == "C":
-            total = total + 2.0
-        elif element == "C-":
-            total = total + 1.7
-        elif element == "D":
-            total = total + 1.0
-    total_gpa = total / 6
-    
+            total.append(subtotal)
+            credit_hour_subtotal.append(credit_hour)
+         
+    for i in total:
+        total_point += i
+    for i in credit_hour_subtotal:
+        credit_hour_total += i
+    total_gpa = total_point / credit_hour_total
     print("total GPA: ")
     print(total_gpa)
     f.close
