@@ -135,21 +135,23 @@ def gpa():
         x = list(i.split(","))
         y = x[3]
         start = y.find(" ") + 1 
-        end = y.find("]", start)
+        end = y.find("}", start)
         grade = y[start:end]
         z = x[2]
         grade_point = 0
 
-        if z == " 1":
+        if z == "  1":
             credit_hour = 1
-        elif z == " 2":
+        elif z == "  2":
             credit_hour = 2
-        elif z == " 3":
+        elif z == "  3":
             credit_hour = 3
-        elif z == " 4":
+        elif z == "  4":
             credit_hour = 4
+
         credit_hour_total = 0
         total_point = 0
+
         if grade == "A+":
             grade_point = grade_point + 4.0
         elif grade == "A":
@@ -170,17 +172,20 @@ def gpa():
             grade_point = grade_point + 1.7
         elif grade == "D":
             grade_point = grade_point + 1.0
+        elif grade == "F":
+            grade_point = grade_point + 0.0
         subtotal = credit_hour * int(grade_point)
-        if subtotal == 0:
-            None
+
+        if grade == "N/A":
+            subtotal = None
         else:
             total.append(subtotal)
             credit_hour_subtotal.append(credit_hour)
-         
+    
     for i in total:
         total_point += i
-    for i in credit_hour_subtotal:
-        credit_hour_total += i
+    for b in credit_hour_subtotal:
+        credit_hour_total += b
     total_gpa = total_point / credit_hour_total
     print("total GPA: ")
     print(total_gpa)
